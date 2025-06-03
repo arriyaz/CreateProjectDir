@@ -9,8 +9,8 @@ This tool sets up a standard project folder structure with a README generated fr
 1. Clone or download the folder:
 
    ```bash
-   git clone <your_repo_url>  # or manually copy the files
-   cd CreateProjectTool
+   git clone <repo_url>  # or manually copy the files
+   cd CreateProjectDir
    ```
 
 2. Make the installer executable:
