@@ -31,10 +31,10 @@ This tool sets up a standard project folder structure with a README generated fr
    CreateProjectDir
    ```
 
-5. To uninstall:
+5. To uninstall, run:
 
    ```bash
-   uninstall CreateProjectDir
+   uninstall_CreateProjectDir
    ```
 
    🔁 If needed, reload shell:
