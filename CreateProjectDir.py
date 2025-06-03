@@ -27,11 +27,11 @@ def main():
     subfolders = [
         "00_docs",
         "01_data",
-        "03_codes",
-        "04_notebooks",
-        "05_workflows",
-        "06_results",
-        "07_temp"
+        "02_codes",
+        "03_notebooks",
+        "04_workflows",
+        "05_results",
+        "06_temp"
     ]
 
     # Create subfolders
