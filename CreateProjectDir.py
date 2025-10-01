@@ -29,7 +29,7 @@ def main():
         "data",
         "codes",
         "notebooks",
-        "pkg"
+        "pkg",
         "workflows",
         "results",
         "sandbox",
