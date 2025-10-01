@@ -25,13 +25,15 @@ def main():
 
     # Define subfolder structure
     subfolders = [
-        "00_docs",
-        "01_data",
-        "02_codes",
-        "03_notebooks",
-        "04_workflows",
-        "05_results",
-        "06_temp"
+        "docs",
+        "data",
+        "codes",
+        "notebooks",
+        "pkg"
+        "workflows",
+        "results",
+        "sandbox",
+        "temp"
     ]
 
     # Create subfolders
