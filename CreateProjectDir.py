@@ -36,9 +36,33 @@ def main():
         "temp"
     ]
 
+    # Folder descriptions (keys are plain folder names)
+    folder_descriptions = {
+        "docs": "All documentation files",
+        "data": "Raw and processed data files",
+        "codes": "Scripts and commands of the project.",
+        "notebooks": "Jupyter notebooks",
+        "pkg": "If any package is developed for the project",
+        "workflows": "Workflow files",
+        "results": "Output results",
+        "sandbox": "Experimental codes and tests",
+        "temp": "Temporary files"
+    }
+
     # Create subfolders
     for sub in subfolders:
         os.makedirs(os.path.join(project_name, sub), exist_ok=True)
+
+    
+    # Build the README section (adds ** ** to all folder names)
+    folder_section = (
+        "## Folder descriptions\n\n"
+        + "\n".join(
+            f"- **{name}**: {folder_descriptions.get(name, '(description TBD)')}"
+            for name in subfolders
+        )
+        + "\n"
+    )
 
     # Prepare README content
     now = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
@@ -46,7 +70,8 @@ def main():
         f"# {project_name}\n\n"
         f"**Author:** {author_name}\n\n"
         f"**Date:** {now}\n\n"
-        f"**Description:** {purpose}\n"
+        f"**Description:** {purpose}\n\n"
+        f"{folder_section}"
     )
 
     # Write to README.md
